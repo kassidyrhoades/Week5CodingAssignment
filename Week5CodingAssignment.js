@@ -73,35 +73,35 @@ while(true){
     if(sectionToView === "Woodwinds"){
         console.log(woodwinds);
     }else if(sectionToView ==="Brass"){
-console.log(brass);
-}else if(sectionToView === "Percussion"){
-console.log(percussion);
-}else{
-console.log("Invalid Section");
-}
-break;
-case "3":
-let sectionToDelete = prompt("Enter the section to delete from: (Woodwinds, Brass, Percussion)");
-let nameToDelete = prompt("Enter the name of the instrument to delete:");
-if(sectionToDelete === "Woodwinds"){
-woodwinds.deleteInstrument(nameToDelete);
-console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
-}else if(sectionToDelete === "Brass"){
-brass.deleteInstrument(nameToDelete);
-console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
-}else if(sectionToDelete === "Percussion"){
-percussion.deleteInstrument(nameToDelete);
-console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
-}else{
-console.log("Invalid Section");
-}
-break;
-case "4":
-console.log("Exiting the app...");
-process.exit();
-break;
-default:
-console.log("Invalid option selected");
-}
+        console.log(brass);
+    }else if(sectionToView === "Percussion"){
+        console.log(percussion);
+    }else{
+        console.log("Invalid Section");
+    }
+    break;
+    case "3":
+    let sectionToDelete = prompt("Enter the section to delete from: (Woodwinds, Brass, Percussion)");
+    let nameToDelete = prompt("Enter the name of the instrument to delete:");
+    if(sectionToDelete === "Woodwinds"){
+      woodwinds.deleteInstrument(nameToDelete);
+      console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
+    }else if(sectionToDelete === "Brass"){
+      brass.deleteInstrument(nameToDelete);
+      console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
+    }else if(sectionToDelete === "Percussion"){
+      percussion.deleteInstrument(nameToDelete);
+      console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
+    }else{
+      console.log("Invalid Section");
+    }
+    break;
+    case "4":
+      console.log("Exiting the app...");
+      process.exit();
+    break;
+    default:
+      console.log("Invalid option selected");
+  }
 }
 
