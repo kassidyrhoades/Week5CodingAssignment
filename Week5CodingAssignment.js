@@ -46,6 +46,7 @@ instruments.forEach(instrument => {
   }
 });
 //logs out the created band sections & their instruments
+console.log("Initial Band Sections:");
 console.log(woodwinds);
 console.log(brass);
 console.log(percussion);
@@ -61,13 +62,16 @@ while(true){
     let newInstrument = new Instrument(name, section, seating);
     if(section === "Woodwinds"){
         woodwinds.addInstrument(newInstrument);
-        console.log(name + " is added to " + section + " section.");        
+        console.log(name + " is added to " + section + " section.");
+        console.log(woodwinds);        
     }else if(section === "Brass"){
         brass.addInstrument(newInstrument);
         console.log(name + " is added to " + section + " section.");
+        console.log(brass);
     }else if(section === "Percussion"){
         percussion.addInstrument(newInstrument);
         console.log(name + " is added to " + section + " section.");
+        console.log(percussion);
     }
     break;
 //create asks for name, section, seating which creates new instrument in array & logs out instrument is added to section    
@@ -90,12 +94,15 @@ while(true){
     if(sectionToDelete === "Woodwinds"){
       woodwinds.deleteInstrument(nameToDelete);
       console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
+      console.log(woodwinds);
     }else if(sectionToDelete === "Brass"){
       brass.deleteInstrument(nameToDelete);
       console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
+      console.log(brass);
     }else if(sectionToDelete === "Percussion"){
       percussion.deleteInstrument(nameToDelete);
       console.log(nameToDelete + " is removed from " + sectionToDelete + " section.");
+      console.log(percussion);
     }else{
       console.log("Invalid Section");
     }
